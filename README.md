@@ -2,6 +2,41 @@
 
 This program uses the GMail API to label your mail in notmuch.
 
+Well, for now all it does it authorize you and list Gmail labels.
+
+#### Advertisement
+
+    » node example.js
+
+Either you are authorized, and you get to see your GMail labels.
+
+```
+Labels:
+- CATEGORY_PERSONAL
+- Sent Messages
+- CATEGORY_SOCIAL
+- Apple Mail To Do
+- Deleted Messages
+- Assholes
+- IMPORTANT
+- [Imap]/Drafts
+- CATEGORY_UPDATES
+- CATEGORY_FORUMS
+- CHAT
+- SENT
+- INBOX
+- TRASH
+- CATEGORY_PROMOTIONS
+- DRAFT
+- SPAM
+- STARRED
+- UNREAD
+```
+
+More likely you didn't do any of the below.
+
+Proceed.
+
 ## Installing
 
 The usual
@@ -14,7 +49,7 @@ npm install
 ```
 
 At this point you are ready to go and authorize yourself; a bit of work,
-not too much.
+not too much. (I shaved some yaks for you)
 
 ### Allowing access to GMail API
 
@@ -51,10 +86,13 @@ If you beautify it, this is more of less what it should look like (don't worry t
 
 Run the following command:
 
-    » node authorize.js
+    » node example.js
 
-The output shows an URL
+Either you are authorized, and you get to see your GMail labels.
 
-    Authorization process running on http://localhost:63001
+Or not, in which case automagically a browsers pops up,
+suggesting you to surf the authorize.
 
-Surf to this URL.
+## Configuring the rest
+
+No rest yet. feel free to fork
